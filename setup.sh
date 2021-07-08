@@ -9,9 +9,10 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
+##MYIP=$(wget -qO- icanhazip.com);
+MYIP=$(curl ifconfig.me);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/demonk1992/down/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
