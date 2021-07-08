@@ -26,14 +26,14 @@ echo "Ketikkan Perintah addhost setelah proses instalasi Script Selesai"
 read -p "Hostname / Domain: " host
 echo "$host" >> /var/lib/premium-script/ipvps.conf 
 echo "$host" >> /etc/v2ray/domain
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
+wget https://raw.githubusercontent.com/demonk1992/down/main/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -88,5 +88,4 @@ echo ""  | tee -a log-install.txt
 echo "------------------------------------------BY HAWENG GANS------------------------------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 10 Sec"
-sleep 10
-reboot
+rm -r setup.sh
