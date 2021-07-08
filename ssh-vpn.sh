@@ -261,7 +261,7 @@ wget -O usernew "https://raw.githubusercontent.com/demonk1992/down/main/usernew.
 wget -O trial "https://raw.githubusercontent.com/demonk1992/down/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/demonk1992/down/main/hapus.sh"
 wget -O member "https://raw.githubusercontent.com/demonk1992/down/main/member.sh"
-wget -o webmin "https://raw.githubusercontent.com/demonk1992/down/main/webmin.sh"
+wget -o webmin "https://raw.githubusercontent.com/demonk1992/down/main/webmin"
 wget -O delete "https://raw.githubusercontent.com/demonk1992/down/main/delete.sh"
 wget -O cek "https://raw.githubusercontent.com/demonk1992/down/main/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/demonk1992/down/main/restart.sh"
