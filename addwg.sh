@@ -2,7 +2,7 @@
 # Load params
 source /etc/wireguard/params
 if [[ "$IP" = "" ]]; then
-SERVER_PUB_IP=$(wget -qO- icanhazip.com);
+SERVER_PUB_IP=$(curl ifconfig.me);
 domain=$(cat /etc/v2ray/domain);
 else
 SERVER_PUB_IP=$IP
