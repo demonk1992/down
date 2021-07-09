@@ -39,8 +39,8 @@ port 1194
 proto tcp
 dev tun
 ca ca.crt
-cert HABLE.crt
-key HABLW.key
+cert ca.crt
+key ca.key
 dh dh2048.pem
 plugin /usr/lib/openvpn/openvpn-plugin-auth-pam.so login
 verify-client-cert none
