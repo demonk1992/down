@@ -1,6 +1,6 @@
 [Unit]
-Description=Websocket-SSH By HAWENG
-Documentation=https://hablessh.tech
+Description=Websocket-SSH
+Documentation=https://idssh.xyz
 After=network.target nss-lookup.target
 
 [Service]
