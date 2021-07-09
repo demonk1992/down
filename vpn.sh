@@ -64,8 +64,8 @@ port 2200
 proto udp
 dev tun
 ca ca.crt
-cert HABLW.crt
-key HABLE.key
+cert ca.crt
+key ca.key
 dh dh2048.pem
 plugin /usr/lib/openvpn/openvpn-plugin-auth-pam.so login
 verify-client-cert none
