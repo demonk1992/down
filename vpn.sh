@@ -27,7 +27,7 @@ wget -O /etc/openvpn/easy-rsa/vars "https://raw.githubusercontent.com/demonk1992
 openssl dhparam -out /etc/openvpn/dh2048.pem 2048
 
 # install openvpn
-wget -O /etc/openvpn/vpn.zip "https://raw.githubusercontent.com/demonk1992/raw/main/vpn.zip"
+wget -O /etc/openvpn/vpn.zip "https://raw.githubusercontent.com/demonk1992/down/raw/main/vpn.zip"
 cd /etc/openvpn/
 unzip vpn.zip
 rm -f vpn.zip
