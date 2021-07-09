@@ -4,6 +4,7 @@
 # Centos 7 & 8 64bit 
 # By HAWENG
 # ==================================================
+MYIP=$(curl ifconfig.me);
 
 
 # Check OS version
