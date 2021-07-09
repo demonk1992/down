@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Checking Vps"
-curl -o.html https://icanhazip.com
+curl -o.html https://ifconfig.me
 sleep 0.5
 clear
 apt install jq curl -y
