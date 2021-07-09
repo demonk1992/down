@@ -104,7 +104,7 @@ sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 
 # Konfigurasi dan Setting untuk Client
 mkdir clientconfig
-cp /etc/openvpn/{HAWENG.crt,HABLE.key,ca.crt,ta.key} clientconfig/
+cp /etc/openvpn/{ca.crt,ca.key,ca.crt,ta.key} clientconfig/
 cd clientconfig
 
 # Buat config client UDP 1194
