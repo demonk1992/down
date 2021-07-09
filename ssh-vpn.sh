@@ -15,10 +15,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=hablessh.tech
-organizationalunit=hablessh.tech
-commonname=hablessh.tech
-email=ADMIN@HABLESSH.TECH
+organization=IDSSH.XYZ
+organizationalunit=IDSSH.XYZ
+commonname=IDSSH.XYZ
+email=ADMIN@IDSSH.XYZ
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/demonk1992/down/main/password"
@@ -146,7 +146,9 @@ rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
 # install webmin
-apt install webmin -y
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.979_all.deb
+dpkg --install webmin_1.979_all.deb
+apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python unzip
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 /etc/init.d/webmin restart
 
