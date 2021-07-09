@@ -9,8 +9,8 @@ rm /var/lib/premium-script/ipvps.conf
 DOMAIN=hablestore.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.hablestore.me
-CF_ID=shokhibrifandi99@gmail.com
-CF_KEY=4f1d941fd48db8d68fb785aa1eba345ac8ae8
+CF_ID=demonkkasep@gmail.com
+CF_KEY=F_4E2bHXMUsiguSaO8GVVhBtlDqW2faVg5LQLHuw
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
