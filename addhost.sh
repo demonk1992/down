@@ -8,7 +8,7 @@ rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
 DOMAIN=hablestore.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.hablestore.me
+SUB_DOMAIN=${sub}.idssh.xyz
 CF_ID=demonkkasep@gmail.com
 CF_KEY=F_4E2bHXMUsiguSaO8GVVhBtlDqW2faVg5LQLHuw
 set -euo pipefail
