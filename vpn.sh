@@ -12,7 +12,7 @@ ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 
 # Install OpenVPN dan Easy-RSA
 apt install openvpn easy-rsa -y
-apt install openssl iptables iptables-persistent -y 
+
 cp -r /usr/share/easy-rsa/ /etc/openvpn
 mkdir /etc/openvpn/easy-rsa/keys
 cp /etc/openvpn/easy-rsa/vars.example /etc/openvpn/easy-rsa/vars
