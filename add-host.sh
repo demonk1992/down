@@ -2,7 +2,7 @@
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
 echo "Checking Vps"
-curl -o.html https://icanhazip.com
+curl -o.html https://ifconfig.me
 sleep 0.5
 clear                                                     
 read -p "Hostname / Domain: " host
