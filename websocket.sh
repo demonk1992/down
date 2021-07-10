@@ -8,6 +8,7 @@ cd
 #Install system auto run
 wget -O /etc/systemd/system/ws-ssh.service "https://raw.githubusercontent.com/demonk1992/down/main/ws-ssh.service"
 chmod +x /etc/systemd/system/ws-ssh.service
+# Ws-ovpn.service
 wget -O /etc/systemd/system/ws-ovpn.service "https://raw.githubusercontent.com/demonk1992/down/main/ws-ovpn.service"
 chmod +x /etc/systemd/system/ws-ovpn.service
 #Install Websocket-SSH
