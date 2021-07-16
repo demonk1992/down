@@ -6,8 +6,8 @@ echo Cek Hak Akses...
 sleep 0.5
 cd
 #Install system auto run
-wget -O /etc/systemd/system/xws-ssh.service "https://raw.githubusercontent.com/demonk1992/down/main/xws-ssh.service"
-chmod +x /etc/systemd/system/xws-ssh.service
+wget -O /etc/systemd/system/stunnel5.service "https://raw.githubusercontent.com/demonk1992/down/main/stunnel5.service"
+chmod +x /etc/systemd/system/stunnel5.service
 # Ws-ovpn.service
 wget -O /etc/systemd/system/ws-ovpn.service "https://raw.githubusercontent.com/demonk1992/down/main/ws-ovpn.service"
 chmod +x /etc/systemd/system/ws-ovpn.service
@@ -19,8 +19,8 @@ wget -O /usr/local/bin/ws-ovpn "https://raw.githubusercontent.com/demonk1992/dow
 chmod +x /usr/local/bin/ws-ovpn
 
 #Enable & Start ws-ssh service
-systemctl enable ws-ssh.service
-systemctl start ws-ssh.service
+systemctl enable stunnel5.service
+systemctl start stunnel5.service
 
 #Enable & Start ws-ovpn service
 systemctl enable ws-ovpn.service
